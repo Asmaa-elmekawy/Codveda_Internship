@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Codveda Academy | Master Modern Coding</title>
+    <meta name="description" content="Unlock your potential with Codveda Academy. Professional coding courses designed for the future." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/style.css">
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16 items-center">
+          <div class="flex items-center gap-2">
+            <div class="w-8 h-8 bg-brand-blue rounded-lg flex items-center justify-center">
+               <span class="text-white font-bold text-xl">C</span>
+            </div>
+            <span class="text-xl font-bold text-slate-900 tracking-tight">Codveda<span class="text-brand-blue">Academy</span></span>
+          </div>
+          
+          <!-- Desktop Menu -->
+          <div class="hidden md:flex items-center gap-8">
+            <a href="#" class="text-slate-600 hover:text-brand-blue font-medium transition-colors">Courses</a>
+            <a href="#" class="text-slate-600 hover:text-brand-blue font-medium transition-colors">Curriculum</a>
+            <a href="#" class="text-slate-600 hover:text-brand-blue font-medium transition-colors">Mentorship</a>
+            <a href="#" class="btn-primary py-2 px-5 text-sm">Get Started</a>
+          </div>
+
+          <!-- Mobile Menu Button -->
+          <div class="md:hidden">
+            <button id="mobile-menu-button" class="p-2 text-slate-600 focus:outline-none" aria-label="Toggle Menu">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Mobile Menu (hidden by default) -->
+      <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200 px-4 py-4 space-y-4">
+        <a href="#" class="block text-slate-600 hover:text-brand-blue font-medium">Courses</a>
+        <a href="#" class="block text-slate-600 hover:text-brand-blue font-medium">Curriculum</a>
+        <a href="#" class="block text-slate-600 hover:text-brand-blue font-medium">Mentorship</a>
+        <a href="#" class="btn-primary block text-center">Get Started</a>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden pt-16 pb-24 lg:pt-32 lg:pb-40 bg-slate-50">
+      <div class="absolute inset-0 pointer-events-none">
+        <div class="absolute -top-24 -left-24 w-96 h-96 bg-brand-blue/10 blur-3xl rounded-full"></div>
+        <div class="absolute top-1/2 -right-24 w-64 h-64 bg-brand-accent/10 blur-3xl rounded-full"></div>
+      </div>
+      
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+        <div class="lg:grid lg:grid-cols-2 lg:gap-12 items-center">
+          <div class="text-center lg:text-left">
+            <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-brand-blue/10 text-brand-blue mb-6">
+              New: Pro Mentorship Program 2026
+            </span>
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 leading-tight mb-6">
+              Master the Art of <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-blue to-indigo-600">Modern Coding</span>
+            </h1>
+            <p class="text-lg text-slate-600 mb-10 max-w-xl mx-auto lg:mx-0">
+              Join thousands of developers leveling up their careers with expert-led courses, real-world projects, and a community that pushes you forward.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+              <a href="#" class="btn-primary">Explore Courses</a>
+              <a href="#" class="btn-secondary flex items-center justify-center gap-2">
+                Watch Demo
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"></path></svg>
+              </a>
+            </div>
+          </div>
+          
+          <div class="mt-16 lg:mt-0 relative">
+            <div class="relative rounded-2xl overflow-hidden shadow-2xl border border-slate-200">
+              <img id="hero-image" src="" alt="Coding Interface" class="w-full h-auto object-cover aspect-[4/3] bg-slate-200 animate-pulse" />
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-900/40 to-transparent"></div>
+            </div>
+            <!-- Floating Stats Card -->
+            <div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-2xl shadow-xl border border-slate-100 hidden sm:block">
+              <div class="flex items-center gap-4">
+                <div class="p-3 bg-green-100 text-green-600 rounded-xl">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
+                </div>
+                <div>
+                  <p class="text-sm text-slate-500 font-medium">Avg Salary Increase</p>
+                  <p class="text-xl font-bold text-slate-900">+42%</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-24 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-20">
+          <h2 class="text-3xl font-bold text-slate-900 mb-4">Why Choose Codveda?</h2>
+          <p class="text-slate-600 max-w-2xl mx-auto">We don't just teach syntax. We teach you how to build, scale, and thrive in the modern tech ecosystem.</p>
+        </div>
+        
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Card 1 -->
+          <div class="p-8 rounded-2xl border border-slate-100 bg-slate-50/50 hover:bg-white hover:shadow-xl transition-all duration-300">
+            <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-xl flex items-center justify-center mb-6">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+            </div>
+            <h3 class="text-xl font-bold mb-4">Real-World Projects</h3>
+            <p class="text-slate-600">Build production-ready applications that you can actually show off in your portfolio.</p>
+          </div>
+          
+          <!-- Card 2 -->
+          <div class="p-8 rounded-2xl border border-slate-100 bg-slate-50/50 hover:bg-white hover:shadow-xl transition-all duration-300">
+            <div class="w-12 h-12 bg-cyan-100 text-cyan-600 rounded-xl flex items-center justify-center mb-6">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+            </div>
+            <h3 class="text-xl font-bold mb-4">1-on-1 Mentorship</h3>
+            <p class="text-slate-600">Get personalized feedback and career guidance from industry veterans who've been there.</p>
+          </div>
+          
+          <!-- Card 3 -->
+          <div class="p-8 rounded-2xl border border-slate-100 bg-slate-50/50 hover:bg-white hover:shadow-xl transition-all duration-300">
+            <div class="w-12 h-12 bg-purple-100 text-purple-600 rounded-xl flex items-center justify-center mb-6">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+            </div>
+            <h3 class="text-xl font-bold mb-4">Fast-Track Curriculum</h3>
+            <p class="text-slate-600">Our courses are designed to get you from zero to hired in the shortest time possible without skipping essentials.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 pt-20 pb-10 text-slate-400">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-4 gap-12 mb-16">
+          <div class="col-span-1 md:col-span-2">
+            <div class="flex items-center gap-2 mb-6">
+              <div class="w-6 h-6 bg-brand-blue rounded flex items-center justify-center">
+                 <span class="text-white font-bold text-sm">C</span>
+              </div>
+              <span class="text-xl font-bold text-white tracking-tight">Codveda<span class="text-brand-blue">Academy</span></span>
+            </div>
+            <p class="max-w-sm">Empowering the next generation of developers with the skills to build the future of the web.</p>
+          </div>
+          <div>
+            <h4 class="text-white font-bold mb-6">Platform</h4>
+            <ul class="space-y-4">
+              <li><a href="#" class="hover:text-white transition-colors">Courses</a></li>
+              <li><a href="#" class="hover:text-white transition-colors">Curriculum</a></li>
+              <li><a href="#" class="hover:text-white transition-colors">Pricing</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-white font-bold mb-6">Company</h4>
+            <ul class="space-y-4">
+              <li><a href="#" class="hover:text-white transition-colors">About Us</a></li>
+              <li><a href="#" class="hover:text-white transition-colors">Careers</a></li>
+              <li><a href="#" class="hover:text-white transition-colors">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="pt-8 border-t border-slate-800 flex flex-col sm:flex-row justify-between items-center gap-4 text-sm">
+          <p>© 2026 Codveda Academy. All rights reserved.</p>
+          <div class="flex gap-6">
+            <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+            <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

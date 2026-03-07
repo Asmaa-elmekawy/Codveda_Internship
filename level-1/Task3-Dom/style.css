@@ -1,0 +1,115 @@
+:root {
+    --bg-color: #ffffff;
+    --text-color: #111827;
+    --accent-color: #6366f1;
+    --secondary-color: #f3f4f6;
+    --border-color: #e5e7eb;
+    --transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.counter-container {
+    text-align: center;
+    padding: 40px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.title {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #6b7280;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 2rem;
+}
+
+.count {
+    font-size: 8rem;
+    font-weight: 600;
+    line-height: 1;
+    margin-bottom: 3rem;
+    color: var(--text-color);
+    transition: var(--transition);
+}
+
+.controls {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    background: var(--secondary-color);
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: var(--transition);
+    outline: none;
+}
+
+button:hover {
+    background: #e5e7eb;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(1px);
+    background: #d1d5db;
+}
+
+#resetBtn {
+    background: transparent;
+    border-color: transparent;
+    color: #9ca3af;
+}
+
+#resetBtn:hover {
+    color: var(--text-color);
+    background: var(--secondary-color);
+}
+
+#incrementBtn {
+    background: var(--accent-color);
+    color: white;
+    border: none;
+    box-shadow: 0 4px 6px -1px rgba(99, 102, 241, 0.2);
+}
+
+#incrementBtn:hover {
+    background: #4f46e5;
+    box-shadow: 0 10px 15px -3px rgba(99, 102, 241, 0.3);
+}
+
+/* Animations */
+@keyframes pop {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.pop-animation {
+    animation: pop 0.2s ease-out;
+}
